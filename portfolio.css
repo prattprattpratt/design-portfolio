@@ -1,0 +1,147 @@
+.main-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    user-select: none !important;
+}
+
+.main-container.invert {
+    background-color: black;
+}
+
+.main-container > .portfolio-item {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    transition: all 0.4s;
+}
+
+.portfolio-item.current {
+    transform: translate(0, 0);
+}
+
+.portfolio-item.last {
+    transform: translate(0, -100vh);
+}
+
+.portfolio-item.next {
+    transform: translate(0, 100vh);
+}
+
+.portfolio-item > .portfolio-nav-title {
+    width: 3rem;
+    margin: 0;
+    writing-mode: tb-rl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(180deg);
+    font-family: 'Josefin Slab', serif;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+}
+
+.portfolio-nav-title > .portfolio-nav-title-letter {
+    padding-left: 0;
+    transition: padding 0.2s;
+}
+
+.portfolio-nav-title-letter.green-text {
+    color: rgb(3, 206, 164);
+}
+
+.portfolio-nav-title > .portfolio-nav-title-letter:hover {
+    padding-left: 5px;
+}
+
+.portfolio-item > .portfolio-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 15vw;
+    margin: auto;
+}
+
+.portfolio-item-content.image-mask {
+    -webkit-mask-box-image: url(image_mask.svg);
+}
+
+.portfolio-item-content > .portfolio-item-image { 
+    width: 100%;
+    transition: all 1s;
+}
+
+.portfolio-item-image#history-moving-image {
+    width: 130%;
+}
+
+.invert .portfolio-item-image {
+    filter: invert(100%);
+}
+
+.lamp svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    overflow: visible;
+}
+
+.lamp svg #Line-5 {
+    transition: all 0.4s;
+    transform-origin: center;
+    transform: scaleY(1);
+}
+
+.lamp svg #Line-6 {
+    transition: all 0.4s;
+    transform: translateY(0);
+}
+
+.lamp *, .down-arrow g path, .up-arrow g path {
+    stroke-width: 8px;
+    stroke: #ccc;
+}
+
+.invert .lamp g circle, .invert .lamp g path, .invert .down-arrow g path {
+    stroke: white;
+}
+
+.down-arrow svg {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.up-arrow svg {
+    position: fixed;
+    top: 10px;
+    right: 0;
+    height: 35px;
+    width: 40px;
+    cursor: pointer;
+}
+
+/* 
+
+COLOR PALETTE
+
+tart orange:        #FB4D3D  rgb(251, 77, 61)
+caribbean green:    #03CEA4  rgb(3, 206, 164)
+b'dazzled blue:     #345995  rgb(52, 89, 149)
+golden poppy:       #FEC601  rgb(254, 198, 1)
+
+courtesy of coolors.co
+
+*/
