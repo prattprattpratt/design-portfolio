@@ -85,6 +85,10 @@
     filter: invert(100%);
 }
 
+.portfolio-item-image#neighbor-logo {
+    cursor: pointer;
+}
+
 .lamp svg {
     position: fixed;
     top: 0;

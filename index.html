@@ -41,7 +41,52 @@
         <div class="portfolio-item next">
             <h2 class="portfolio-nav-title">neighbor</h2>
             <div class="portfolio-item-content">
-                <img class="portfolio-item-image" />
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg onclick="toggleNeighborAnimation()" id="neighbor-logo" class="portfolio-item-image" width="183px" height="156px" viewBox="0 0 183 156" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Logos-/-House" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Neighbor-Logo---House" transform="translate(-1.000000, 0.000000)" fill="#028BFF"
+                            fill-rule="nonzero">
+                            <polygon id="Fill-1" points="0,65.8259179 0,65.8259179 8.16983337,77 8.16983337,77 91.4997629,17.2121293 91.4997629,17.2121293 174.830641,77 174.830641,77 183,65.8263947 183,65.8254411 91.4997629,0 91.4997629,0">
+                                <animate id="fill1-to-x" begin="shape.click" fill="freeze" attributeName="points" dur="200ms"
+                                    to="28,18 94,79 28,145 38,155 104,89 165,155 175,145 114,79 175,18 165,8 104,69 38,8" />
+                                <animate id="x-to-fill1" begin="shape.click" fill="freeze" attributeName="points" dur="200ms"
+                                    to="0,65.8259179 0,65.8259179 8.16983337,77 8.16983337,77 91.4997629,17.2121293 91.4997629,17.2121293 174.830641,77 174.830641,77 183,65.8263947 183,65.8254411 91.4997629,0 91.4997629,0" />
+                            </polygon>
+                            <polygon id="Fill-2" points="38.8217248 51 26 51 26 6 68 6 68 27.2033457 55.1782752 27.2033457 55.1782752 18.5194371 38.8217248 18.5194371">
+                                <animate id="fill2-to-x" begin="shape.click" fill="freeze" attributeName="points" dur="200ms"
+                                    to="110 80 110 80 110 80 110 80 110 80 110 80 110 80 110 80" />
+                                <animate id="x-to-fill2" begin="shape.click" fill="freeze" attributeName="points" dur="200ms"
+                                    to="38.8217248 51 26 51 26 6 68 6 68 27.2033457 55.1782752 27.2033457 55.1782752 18.5194371 38.8217248 18.5194371" />
+                            </polygon>
+                            <polygon id="Fill-3" points="102.497345 69 102.497345 82.7901103 141.305763 82.7901103 141.305763 142.210364 39.6942365 142.210364 39.6942365 82.7901103 65.2801302 82.7901103 65.2801302 69 26 69 26 156 155 156 155 69">
+                                <animate id="fill3-to-x" begin="shape.click" fill="freeze" attributeName="points" dur="200ms"
+                                    to="110 80 110 80 110 80 110 80 110 80 110 80 110 80 110 80 110 80 110 80 110 80 110 80" />
+                                <animate id="x-to-fill3" begin="shape.click" fill="freeze" attributeName="points" dur="200ms"
+                                    to="102.497345 69 102.497345 82.7901103 141.305763 82.7901103 141.305763 142.210364 39.6942365 142.210364 39.6942365 82.7901103 65.2801302 82.7901103 65.2801302 69 26 69 26 156 155 156 155 69" />
+                            </polygon>
+                            <polygon id="Fill-4" points="33 112 98.328 112 98.328 100 33 100">
+                                <animate id="fill4-to-x" begin="shape.click" fill="freeze" attributeName="points" dur="200ms"
+                                    to="110 80 110 80 110 80 110 80" />
+                                <animate id="x-to-fill4" begin="shape.click" fill="freeze" attributeName="points" dur="200ms"
+                                    to="33 112 98.328 112 98.328 100 33 100" />
+                            </polygon>
+                            <polygon id="Fill-5" points="98.328 150 110 150 110 75 98.328 75">
+                                <animate id="fill5-to-x" begin="shape.click" fill="freeze" attributeName="points" dur="200ms"
+                                    to="110 80 110 80 110 80 110 80" />
+                                <animate id="x-to-fill5" begin="shape.click" fill="freeze" attributeName="points" dur="200ms"
+                                    to="98.328 150 110 150 110 75 98.328 75" />
+                            </polygon>
+                            <path d="M60,111 L60,45 L110,45 L110,111 L60,111 Z M71.6729295,99.4439708 L98.3280147,99.4439708 L98.3280147,56.5564966 L71.6729295,56.5564966 L71.6729295,99.4439708 Z"
+                                id="Fill-6">
+                                <animate id="path-to-x" begin="shape.click" fill="freeze" attributeName="d" dur="200ms"
+                                    to="M110,80 L110,80 L110,80 L110,80 L110,80 Z M110,80 L110,80 L110,80 L110,80 L110,80 Z" />
+                                <animate id="x-to-path" begin="shape.click" fill="freeze" attributeName="d" dur="200ms"
+                                    to="M60,111 L60,45 L110,45 L110,111 L60,111 Z M71.6729295,99.4439708 L98.3280147,99.4439708 L98.3280147,56.5564966 L71.6729295,56.5564966 L71.6729295,99.4439708 Z" />
+                            </path>
+                        </g>
+                    </g>
+                </svg>
             </div>
         </div>
         <div class="portfolio-item next">
@@ -110,8 +155,9 @@
 <script>
     let upArrowVisible = false;
     let downArrowVisible = true;
+    let neighborLogoIsLogo = true;
 
-    const navTitleLetters = document.getElementsByClassName('portfolio-nav-title-letter');    
+    const navTitleLetters = document.getElementsByClassName('portfolio-nav-title-letter');
     const lamp = document.getElementsByClassName('lamp')[0];
     const downArrow = document.getElementById('down-arrow');
     const upArrow = document.getElementById('up-arrow');
@@ -151,37 +197,37 @@
 
     function toggleArrowSize(size, event) {
         return function () {
-            
+
         }
     }
 
     function scrollPortolioItems(event) {
-            const activeItem = document.getElementsByClassName('current')[0];
-            if (['ArrowDown', 'ArrowRight'].includes(event.key) && activeItem.nextElementSibling) {
-                activeItem.classList.remove('current');
-                activeItem.classList.add('last');
-                activeItem.nextElementSibling.classList.remove('next');
-                activeItem.nextElementSibling.classList.add('current');
-            } else if ( ['ArrowUp', 'ArrowLeft'].includes(event.key) && activeItem.previousElementSibling) {
-                activeItem.classList.remove('current');
-                activeItem.classList.add('next');
-                activeItem.previousElementSibling.classList.remove('last');
-                activeItem.previousElementSibling.classList.add('current');
-            }
+        const activeItem = document.getElementsByClassName('current')[0];
+        if (['ArrowDown', 'ArrowRight'].includes(event.key) && activeItem.nextElementSibling) {
+            activeItem.classList.remove('current');
+            activeItem.classList.add('last');
+            activeItem.nextElementSibling.classList.remove('next');
+            activeItem.nextElementSibling.classList.add('current');
+        } else if (['ArrowUp', 'ArrowLeft'].includes(event.key) && activeItem.previousElementSibling) {
+            activeItem.classList.remove('current');
+            activeItem.classList.add('next');
+            activeItem.previousElementSibling.classList.remove('last');
+            activeItem.previousElementSibling.classList.add('current');
+        }
 
-            if (event.target.id === 'down-arrow') {
-                activeItem.classList.remove('current');
-                activeItem.classList.add('last');
-                activeItem.nextElementSibling.classList.remove('next');
-                activeItem.nextElementSibling.classList.add('current');
-            } else if (event.target.id === 'up-arrow') {
-                activeItem.classList.remove('current');
-                activeItem.classList.add('next');
-                activeItem.previousElementSibling.classList.remove('last');
-                activeItem.previousElementSibling.classList.add('current');
-            }
+        if (event.target.id === 'down-arrow') {
+            activeItem.classList.remove('current');
+            activeItem.classList.add('last');
+            activeItem.nextElementSibling.classList.remove('next');
+            activeItem.nextElementSibling.classList.add('current');
+        } else if (event.target.id === 'up-arrow') {
+            activeItem.classList.remove('current');
+            activeItem.classList.add('next');
+            activeItem.previousElementSibling.classList.remove('last');
+            activeItem.previousElementSibling.classList.add('current');
+        }
 
-            toggleArrowVisibility();
+        toggleArrowVisibility();
     }
 
     function toggleArrowVisibility() {
@@ -211,6 +257,23 @@
         historyImage.style.transform = `translate(${-25 * x}px, ${-25 * y}px)`;
     }
 
+    toggleNeighborAnimation = () => {
+        neighborLogoIsLogo = !neighborLogoIsLogo;
+        const neighborLogoAnimations = document.querySelectorAll(neighborLogoIsLogo ?
+            '#x-to-fill1, #x-to-fill2, #x-to-fill3, #x-to-fill4, #x-to-fill5, #x-to-path' :
+            '#fill1-to-x, #fill2-to-x, #fill3-to-x, #fill4-to-x, #fill5-to-x, #path-to-x'
+        );
+
+        Array.from(neighborLogoAnimations, animation => {
+            animation.beginElement();
+        });
+    }
+
+
+    function onScroll() {
+        console.log(window.scrollY);
+    }
+
     Array.from(navTitleLetters).forEach(letter => { letter.addEventListener('click', animateLetters(letter)) });
     lamp.addEventListener('click', toggleInvertColors());
     lamp.addEventListener('mousedown', toggleLampStringLength('long'));
@@ -224,6 +287,7 @@
     document.addEventListener('keydown', (event) => scrollPortolioItems(event));
     document.addEventListener('DOMContentLoaded', toggleArrowVisibility);
     document.addEventListener('mousemove', moveImagesWithMouse);
+    window.addEventListener('scroll', onScroll);
 </script>
 
 </html>
