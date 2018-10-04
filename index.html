@@ -29,7 +29,7 @@
                 <span class="portfolio-nav-title-letter green-text">n</span>
             </h2>
             <div class="portfolio-item-content">
-                <img class="portfolio-item-image" src="london_animation.gif" />
+                <img class="portfolio-item-image london" src="london_animation.gif" />
             </div>
         </div>
         <div class="portfolio-item next">
@@ -90,7 +90,19 @@
             </div>
         </div>
         <div class="portfolio-item next">
-            <h2 class="portfolio-nav-title">byu_history</h2>
+            <h2 class="portfolio-nav-title">
+                <span class="portfolio-nav-title-letter blue-text">b</span>
+                <span class="portfolio-nav-title-letter blue-text">y</span>
+                <span class="portfolio-nav-title-letter blue-text">u</span>
+                <span class="portfolio-nav-title-letter">_</span>
+                <span class="portfolio-nav-title-letter">h</span>
+                <span class="portfolio-nav-title-letter">i</span>
+                <span class="portfolio-nav-title-letter">s</span>
+                <span class="portfolio-nav-title-letter">t</span>
+                <span class="portfolio-nav-title-letter">o</span>
+                <span class="portfolio-nav-title-letter">r</span>
+                <span class="portfolio-nav-title-letter">y</span>
+            </h2>
             <div class="portfolio-item-content image-mask">
                 <img id="history-moving-image" class="portfolio-item-image" src="history1.png" />
             </div>
@@ -254,7 +266,7 @@
         const y = Math.sign(e.clientY - (window.innerHeight / 2));
         const historyImage = document.getElementById('history-moving-image');
 
-        historyImage.style.transform = `translate(${-25 * x}px, ${-25 * y}px)`;
+        historyImage.style.transform = `translate(${-55 * x}px, ${-55 * y}px)`;
     }
 
     toggleNeighborAnimation = () => {
